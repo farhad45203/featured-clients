@@ -1,0 +1,87 @@
+.features-section {
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.features-section h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+.arrowDown {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tablet-list-wraper {
+  position: relative;
+}
+
+.tablet-home-clients-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0 20px;
+}
+
+.tablet-home-clients-list li {
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: left;
+  transition: text-align 0.3s ease;
+}
+
+.tablet-home-clients-list li.scrolled-right {
+  text-align: right;
+}
+
+.arrowRight,
+.arrowLeft,
+.arrowDown {
+  width: 1rem;
+}
+
+.arrowRight {
+  transform: rotate(-90deg);
+  display: none;
+}
+
+.arrowLeft {
+  transform: rotate(90deg);
+}
+
+.home-clits-arrow .arrowLeft {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sticky .arrowLeft {
+  position: fixed;
+  top: 50%;
+  right: 8px;
+  z-index: 10;
+}
+
+.bottom .arrowLeft {
+  position: absolute;
+  bottom: 0;
+  top: unset;
+  right: 0;
+}
+
+@media (min-width: 767px) {
+  .tablet-home-clients-list li {
+    font-size: 75px;
+  }
+}
